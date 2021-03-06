@@ -3,7 +3,7 @@
   <groupId>net.cyberflame.plugin</groupId>
   <artifactId>Plugin</artifactId>
   <version>1.0</version>
-  <name>Herbs</name>
+  <name>plugin</name>
  <repositories>
     <repository>
         <id>spigot-repo</id>
