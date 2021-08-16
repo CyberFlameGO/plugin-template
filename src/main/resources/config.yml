@@ -3,4 +3,4 @@ messages:
   from-listener: "&aHello world from Listener."
   from-task: "&dHello world from Task."
 
-task-repeat-every: 3
+task-repeat-every: 3 # in seconds
