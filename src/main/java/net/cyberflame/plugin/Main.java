@@ -25,7 +25,7 @@ public class Plugin extends JavaPlugin {
 
     private static Plugin instance;
 
-    public static Plugin getInstance () {
-        return Plugin.instance;
+    public static Main getInstance () {
+        return Main.instance;
     }
 }
