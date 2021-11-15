@@ -2,6 +2,7 @@ package net.cyberflame.plugin;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.scheduler.BukkitTask;
 
 import net.cyberflame.plugin.commands.Command;
 import net.cyberflame.plugin.listeners.PlayerJoinListener;
@@ -20,7 +21,7 @@ public class Main extends JavaPlugin {
         Bukkit.getServer().getPluginManager().registerEvents(new PlayerJoinListener(), this);
 
         final long taskRepeatEvery = this.getConfig().getInt("task-repeat-every") * 20L;
-        this.getServer().getScheduler().runTaskTimer(this, new Task(), taskRepeatEvery, taskRepeatEvery);
+        BukkitTask task = new Task().runTaskLater(this, taskRepeatEvery);
     }
 
     private static Main instance;
