@@ -7,7 +7,7 @@ import org.bukkit.command.CommandSender;
 
 import net.cyberflame.plugin.Main;
 
-public class Command implements CommandExecutor {
+public class RootCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         final String message = Main.getInstance().getConfig().getString("messages.from-command");
