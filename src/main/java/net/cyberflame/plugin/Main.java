@@ -7,7 +7,7 @@ import net.cyberflame.plugin.commands.Command;
 import net.cyberflame.plugin.listeners.PlayerJoinListener;
 import net.cyberflame.plugin.tasks.Task;
 
-public class Plugin extends JavaPlugin {
+public class Main extends JavaPlugin {
     
     @Override
     public void onEnable () {
@@ -23,7 +23,7 @@ public class Plugin extends JavaPlugin {
         this.getServer().getScheduler().runTaskTimer(this, new Task(), taskRepeatEvery, taskRepeatEvery);
     }
 
-    private static Plugin instance;
+    private static Main instance;
 
     public static Main getInstance () {
         return Main.instance;
