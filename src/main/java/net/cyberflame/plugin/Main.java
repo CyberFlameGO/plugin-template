@@ -23,7 +23,7 @@ public class Main extends JavaPlugin {
 	    
 	// This is a regular Runnable example just in case I have a use for it,
 	// though I'm not making a Runnable example file
-	Bukkit.getScheduler().scheduleSyncDelayedTask(this.plugin, new Runnable() {
+	Bukkit.getScheduler().scheduleSyncDelayedTask(this, new Runnable() {
 			public void run() {
 				//remove the block placed.
 				System.out.println("start message XD");
