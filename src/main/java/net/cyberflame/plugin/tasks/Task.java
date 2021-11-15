@@ -4,8 +4,6 @@ import net.cyberflame.plugin.Main;
 import org.bukkit.Bukkit;
 import org.bukkit.scheduler.BukkitRunnable;
 
-import net.cyberflame.plugin.Plugin;
-
 public class Task extends BukkitRunnable {
     @Override
     public void run() {
