@@ -4,7 +4,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitTask;
 
-import net.cyberflame.plugin.commands.Command;
+import net.cyberflame.plugin.commands.RootCommand;
 import net.cyberflame.plugin.listeners.PlayerJoinListener;
 import net.cyberflame.plugin.tasks.Task;
 
@@ -14,7 +14,7 @@ public class Main extends JavaPlugin {
     public void onEnable () {
         this.saveDefaultConfig();
 	    
-        this.getCommand("command").setExecutor(new Command());
+        this.getCommand("rootcommand").setExecutor(new RootCommand());
         
         Bukkit.getServer().getPluginManager().registerEvents(new PlayerJoinListener(), this);
 
