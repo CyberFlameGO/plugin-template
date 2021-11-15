@@ -20,6 +20,15 @@ public class Main extends JavaPlugin {
 
         final long taskRepeatEvery = this.getConfig().getInt("task-repeat-every") * 20L;
         BukkitTask task = new Task().runTaskLater(this, taskRepeatEvery);
+	    
+	// This is a regular Runnable example just in case I have a use for it,
+	// though I'm not making a Runnable example file
+	Bukkit.getScheduler().scheduleSyncDelayedTask(this.plugin, new Runnable() {
+			public void run() {
+				//remove the block placed.
+				System.out.println("start message XD");
+			}
+		}, 20L * 2L * 3l);
     }
 
     private static Main instance;
