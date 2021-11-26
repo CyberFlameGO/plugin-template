@@ -1,5 +1,5 @@
 name: ${project.name}
-main: net.cyberflame.plugin.Plugin
+main: net.cyberflame.plugin.Main
 version: ${project.version}
 description: Plugin
 website: https://cyberfla.me/
